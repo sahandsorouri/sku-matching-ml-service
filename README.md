@@ -14,17 +14,16 @@ A production-ready machine learning microservice for matching messy retail SKU l
 - [Timeline](#timeline)
 - [Long-term Impact](#long-term-impact)
 - [My Role](#my-role)
-- [License](#license)
 
 ---
 
-## 🧩 Overview
+## Overview
 
 This ML service ingests raw, duplicate-heavy retail item listings and returns the matched canonical SKU ID using a hybrid of LightGBM classification and fastText-based semantic embeddings. The system includes real-time API access, caching, and a human-in-the-loop verification mechanism during early-stage training.
 
 ---
 
-## 🐞 Problem
+## Problem
 
 Retail datasets often include massive amounts of:
 - Duplicated SKUs with inconsistent naming
@@ -37,7 +36,7 @@ Manual cleanup at this scale was inefficient and error-prone.
 
 ---
 
-## 🛠️ Solution
+## Solution
 
 We built a **FastAPI-based service** that leverages:
 - **fastText embeddings** to convert item names to vectors
@@ -49,7 +48,7 @@ We built a **FastAPI-based service** that leverages:
 
 ---
 
-## 🧪 Technologies Used
+## Technologies Used
 
 - **Python**
 - **LightGBM**
@@ -61,7 +60,7 @@ We built a **FastAPI-based service** that leverages:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```text
 +--------------------------+
@@ -92,7 +91,7 @@ Model Retraining (via Airflow)
 
 ---
 
-## 🚀 Key Outcomes
+## Key Outcomes
 
 - 💥 **Manual data-cleaning reduced by 85%**
 - ⚡ **Search latency decreased by 30%**
@@ -105,20 +104,20 @@ Model Retraining (via Airflow)
 
 ---
 
-## ⏳ Timeline
+## Timeline
 
 - 6-week proof of concept
 - Production-ready by **week 10**
 
 ---
 
-## 📈 Long-term Impact
+## Long-term Impact
 
 This service now **powers pricing and bundle suggestions** across the product suite. It is a foundational tool for enabling real-time personalization and operational efficiency.
 
 ---
 
-## 👤 My Role
+## My Role
 
 I led this project as the **Product Manager**, collaborating with a team of data scientists.
 
